@@ -1,0 +1,9 @@
+{
+  "compatibilityMode": false,
+  "productionMode": false,
+  "npmFolder": "/Users/sowalpha/IdeaProjects/ville-de-paris",
+  "generatedFolder": "/Users/sowalpha/IdeaProjects/ville-de-paris/target/frontend",
+  "frontendFolder": "/Users/sowalpha/IdeaProjects/ville-de-paris/frontend",
+  "pnpm.enable": false,
+  "require.home.node": false
+}
