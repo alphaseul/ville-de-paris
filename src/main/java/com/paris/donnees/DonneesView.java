@@ -1,4 +1,4 @@
-package com.paris.connection;
+package com.paris.donnees;
 
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -7,32 +7,29 @@ import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.polymertemplate.PolymerTemplate;
 
-
 /**
- * A Designer generated component for the connection-view template.
+ * A Designer generated component for the donnees-view template.
  *
  * Designer will add and remove fields with @Id mappings but
  * does not overwrite or otherwise change this file.
  */
-@Route("login")
-@PageTitle("login")
-@Tag("connection-view")
-@JsModule("./connection-view.js")
-public class ConnectionView extends PolymerTemplate<ConnectionView.ConnectionViewModel> {
+@Route("donnees")
+@PageTitle("donnees")
+@Tag("donnees-view")
+@JsModule("./donnees-view.js")
+public class DonneesView extends PolymerTemplate<DonneesView.DonneesViewModel> {
 
     /**
-     * Creates a new ConnectionView.
+     * Creates a new DonneesView.
      */
-    public ConnectionView(){
+    public DonneesView() {
         // You can initialise any data required for the connected UI components here.
     }
 
     /**
-     * This model binds properties between ConnectionView and connection-view
+     * This model binds properties between DonneesView and donnees-view
      */
-    public interface ConnectionViewModel extends TemplateModel {
+    public interface DonneesViewModel extends TemplateModel {
         // Add setters and getters for template properties here.
     }
-
-
 }

@@ -5,7 +5,7 @@
     <artifactId>ville-de-paris</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>My Application</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.target>11</maven.compiler.target>
