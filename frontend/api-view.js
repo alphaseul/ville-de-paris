@@ -1,7 +1,6 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '@vaadin/vaadin-upload/src/vaadin-upload-file.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
-import '@vaadin/vaadin-upload/src/vaadin-upload.js';
 
 class ApiView extends PolymerElement {
 
@@ -10,16 +9,20 @@ class ApiView extends PolymerElement {
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <a href="home"><img src="" alt="logo" id="logo"></a>
 <br>
-<div class="form1 mt-3" style="background-color: #002080; height: 100px;">
- <nav class="navbar navbar-light">
-  <form class="form-inline">
-   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-   <button id="search" class="btn btn-outline-light my-2 my-sm-0" type="submit" style="flex-grow: 0;">Search</button>
-  </form>
- </nav>
+
+<div class="d-flex mx-auto">
+<div class="mt-3 ml-3 " style="width: 50%;">
+ <input type="text" id="inputExportDataBase" class="form-control col-md-5 mb-3" placeholder="Data Base Name" required>
+ <input type="text" id="inputExportPath" class="form-control " placeholder="/Users/sowalpha/Desktop/Documents/data.csv" required>
+ <button id="Export" class="btn btn-primary mt-3">Export</button>
 </div>
-<vaadin-upload id="uploadfile" accept=".csv"></vaadin-upload>
-<button class="btn btn-primary">Import</button>
+<div class="mt-3 ml-3 " style="width: 50%;">
+ <input type="text" id="inputImportDataBase" class="form-control col-md-5 mb-3" placeholder="Data Base Name" required>
+ <input type="text" id="inputImportPath" class="form-control " placeholder="/Users/sowalpha/Desktop/Documents/data.csv" required>
+ <button id="import "class="btn btn-primary mt-3">Import</button>
+</div>
+</div>
+
 `;
     }
     static get is() {

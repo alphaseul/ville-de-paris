@@ -1,9 +1,2 @@
-com/paris/donnees/DonneesView.class
-com/paris/HomeView$HomeViewModel.class
-com/paris/User.class
-com/paris/connection/ConnectionView.class
-com/paris/donnees/DonneesView$DonneesViewModel.class
-com/paris/api/ApiView.class
-com/paris/api/ApiView$ApiViewModel.class
-com/paris/HomeView.class
-com/paris/connection/ConnectionView$ConnectionViewModel.class
+com/paris/DataTable.class
+com/paris/connectData.class

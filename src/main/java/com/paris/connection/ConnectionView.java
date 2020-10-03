@@ -34,5 +34,4 @@ public class ConnectionView extends PolymerTemplate<ConnectionView.ConnectionVie
         // Add setters and getters for template properties here.
     }
 
-
 }
