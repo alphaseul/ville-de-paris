@@ -3,18 +3,16 @@ package com.paris.api;
 import com.paris.DataTable;
 import com.paris.connectData;
 import com.vaadin.flow.component.html.Image;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Input;
 import com.vaadin.flow.component.html.NativeButton;
 import com.vaadin.flow.component.polymertemplate.Id;
-import com.vaadin.flow.component.upload.Upload;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.templatemodel.TemplateModel;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.polymertemplate.PolymerTemplate;
-import java.sql.*;
+
 /**
  * A Designer generated component for the api-view template.
  *
@@ -42,7 +40,7 @@ public class ApiView extends PolymerTemplate<ApiView.ApiViewModel> {
     @Id("import ")
     private NativeButton buttonImport;
 
-    public ApiView() throws SQLException {
+    public ApiView() {
         logo.setSrc("http://localhost/site-ville-Paris/logo/logo.png");
         buttonExport.addClickListener(event -> {
             connectData exportData = new connectData(inputExportDataBase.getValue());
