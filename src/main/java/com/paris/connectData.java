@@ -26,6 +26,7 @@ public class connectData {
         try {
             con = DriverManager.getConnection(url, user, password);
             stmt = con.createStatement();
+            Notification.show("connect success");
         } catch (SQLException e) {
             Notification.show("Connection Failed ");
         }
